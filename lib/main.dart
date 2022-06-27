@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'views/home_screen.dart';
+import 'views/dalin/dalin_home_screen.dart';
 
 void main() => runApp(const MyApp());
+
+bool isdalin = false;
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -10,11 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: '배달의민족',
+      title: '달인',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const DalinHomeScreen(),
     );
   }
 }
