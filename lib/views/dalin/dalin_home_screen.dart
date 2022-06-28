@@ -5,7 +5,7 @@ import 'package:flutter_dalin/views/dalin/my/mypage_screen.dart';
 import 'package:flutter_dalin/views/dalin/profile/profile_screen.dart';
 import 'package:flutter_dalin/views/dalin/request/request_screen.dart';
 import 'package:flutter_dalin/views/dalin/search/search_screen.dart';
-import '../../transition/slide_transition.dart';
+import 'package:flutter_dalin/thirdParty/slide_transition.dart';
 
 List<Widget> views = [
   const RequestScreen(),
