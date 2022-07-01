@@ -20,6 +20,15 @@ class _MypageScreenState extends State<MypageScreen> {
         ),
         backgroundColor: const Color.fromRGBO(42, 193, 188, 1),
       ),
+      body: const Center(
+        child: Text(
+          "마이 페이지-body",
+          style: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
     );
   }
 }

@@ -18,6 +18,15 @@ class _EstimateScreenState extends State<EstimateScreen> {
         ),
         backgroundColor: const Color.fromRGBO(42, 193, 188, 1),
       ),
+      body: const Center(
+        child: Text(
+          "견적 페이지-body",
+          style: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
     );
   }
 }

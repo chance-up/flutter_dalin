@@ -20,6 +20,15 @@ class _ChatScreenState extends State<ChatScreen> {
         ),
         backgroundColor: const Color.fromRGBO(42, 193, 188, 1),
       ),
+      body: const Center(
+        child: Text(
+          "채팅 페이지-body",
+          style: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
     );
   }
 }
