@@ -20,6 +20,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ),
         backgroundColor: const Color.fromRGBO(42, 193, 188, 1),
       ),
+      body: Center(
+        child: Text("프로필 페이지"),
+      ),
     );
   }
 }

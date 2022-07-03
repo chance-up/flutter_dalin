@@ -20,6 +20,9 @@ class _RequestScreenState extends State<RequestScreen> {
         ),
         backgroundColor: const Color.fromRGBO(42, 193, 188, 1),
       ),
+      body: Center(
+        child: Text("요청 페이지"),
+      ),
     );
   }
 }
