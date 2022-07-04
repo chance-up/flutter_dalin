@@ -13,13 +13,6 @@ class _MypageScreenState extends State<MypageScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text(
-          "마이 페이지",
-        ),
-        backgroundColor: const Color.fromRGBO(42, 193, 188, 1),
-      ),
       body: const Center(
         child: Text(
           "마이 페이지-body",

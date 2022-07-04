@@ -13,13 +13,6 @@ class _RequestScreenState extends State<RequestScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text(
-          "요청 페이지",
-        ),
-        backgroundColor: const Color.fromRGBO(42, 193, 188, 1),
-      ),
       body: Center(
         child: Text("요청 페이지"),
       ),

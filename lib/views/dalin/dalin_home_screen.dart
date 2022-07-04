@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dalin/views/dalin/all_service/all_service_screen.dart';
 import 'package:flutter_dalin/views/dalin/chat/chat_screen.dart';
 import 'package:flutter_dalin/views/dalin/estimate/estimate_screen.dart';
 import 'package:flutter_dalin/views/dalin/my/mypage_screen.dart';
@@ -70,17 +71,41 @@ class _DalinHomeScreenState extends State<DalinHomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(20),
+          ),
+        ),
         centerTitle: true,
-        title: const Text(
-          "주소가 들어간다.",
+        title: Column(
+          children: [
+            const Text(
+              "주소가 들어간다.",
+            ),
+            const Text(
+              "서브타이틀1",
+            ),
+          ],
+        ),
+        bottom: PreferredSize(
+          child: Text("서브타이틀2"),
+          preferredSize: Size.fromHeight(0),
+          // change height for changing app bar height as per content
         ),
         backgroundColor: const Color.fromRGBO(42, 193, 188, 1),
         leading: IconButton(
             icon: const Icon(Icons.menu),
             onPressed: () {
               Navigator.push(
-                  context, SlideLeftRoute(page: const SearchScreen()));
+                  context, SlideLeftRoute(page: const AllServiceScreen()));
             }),
+        actions: <Widget>[
+          new IconButton(
+            icon: new Icon(Icons.notifications),
+            tooltip: 'Hi!',
+            onPressed: () => {},
+          ),
+        ],
       ),
       body: _buildBaseView1(),
     );

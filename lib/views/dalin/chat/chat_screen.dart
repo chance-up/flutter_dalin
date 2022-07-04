@@ -13,14 +13,7 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text(
-          "채팅 페이지",
-        ),
-        backgroundColor: const Color.fromRGBO(42, 193, 188, 1),
-      ),
-      body: const Center(
+      body: Center(
         child: Text(
           "채팅 페이지-body",
           style: TextStyle(
