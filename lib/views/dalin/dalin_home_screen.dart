@@ -82,16 +82,14 @@ class _DalinHomeScreenState extends State<DalinHomeScreen> {
             const Text(
               "주소가 들어간다.",
             ),
-            const Text(
-              "서브타이틀1",
-            ),
+            const Icon(Icons.location_on),
           ],
         ),
-        bottom: PreferredSize(
-          child: Text("서브타이틀2"),
-          preferredSize: Size.fromHeight(0),
-          // change height for changing app bar height as per content
-        ),
+        // bottom: PreferredSize(
+        //   child: Text("서브타이틀2"),
+        //   preferredSize: Size.fromHeight(0),
+        //   // change height for changing app bar height as per content
+        // ),
         backgroundColor: const Color.fromRGBO(42, 193, 188, 1),
         leading: IconButton(
             icon: const Icon(Icons.menu),
