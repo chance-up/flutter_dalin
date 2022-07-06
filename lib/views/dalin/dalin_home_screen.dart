@@ -7,6 +7,8 @@ import 'package:flutter_dalin/views/dalin/profile/profile_screen.dart';
 import 'package:flutter_dalin/views/dalin/request/request_screen.dart';
 import 'package:flutter_dalin/views/dalin/search/search_screen.dart';
 import 'package:flutter_dalin/thirdParty/slide_transition.dart';
+import 'package:flutter_dalin/images/test1.svg';
+import 'package:flutter_svg/svg.dart';
 
 List<Widget> views = [
   const RequestScreen(),
@@ -82,7 +84,9 @@ class _DalinHomeScreenState extends State<DalinHomeScreen> {
             const Text(
               "주소가 들어간다.",
             ),
-            const Icon(Icons.location_on),
+            SvgPicture.asset(
+              'images/test1.svg',
+            ),
           ],
         ),
         // bottom: PreferredSize(
